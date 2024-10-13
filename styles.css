@@ -108,7 +108,7 @@ button:active {
   }
 
   .blog-container {
-    width: calc(100% - 40px); /* Full width for blog container */
+    width: calc(80% - 40px); /* Full width for blog container */
     margin-top: 20px; /* Margin above the blog */
   }
 }
