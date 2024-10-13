@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px; /* Added margin to separate from ads */
+}
+
+.heading {
+  font-family: 'Roboto', sans-serif; /* Use the Google Font */
+  font-size: 2.5em; /* Increase font size */
+  color: #4caf50; /* Green color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a text shadow */
+  margin: 0; /* Remove default margin */
+  padding: 10px 0; /* Add vertical padding */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+button:active {
+  background-color: #388e3c; /* Even darker green on click */
+  transform: translateY(0); /* Reset lift effect on click */
+}
+
+.meter-container {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.meter {
+  position: absolute;
+  height: 100%;
+  background-color: #4caf50; /* Green color for the meter */
+  border-radius: 15px;
+  width: 0; /* Start with 0 width */
+  transition: width 0.1s ease; /* Smooth transition */
+}
+
+.speed-display {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.results-display {
+  margin-top: 20px;
+  font-size: 16px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s; /* Fade transition for results */
+}
+
+.ad-container {
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px; /* Add margin for spacing */
+}
+
+.blog-container {
+  background-color: #e0e0e0;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px; /* Margin for separation */
+  flex-basis: 100%; /* Full width */
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center align */
+  }
+
+  .ad-container {
+    display: inline-block; /* Align ads next to each other */
+    width: 200px; /* Fixed width for ads */
+    vertical-align: top; /* Aligns ads to the top */
+  }
+
+  .container {
+    display: inline-block; /* Allow the main container to be inline */
+    width: calc(100% - 420px); /* Adjust width for ads */
+  }
+
+  .blog-container {
+    width: calc(100% - 40px); /* Full width for blog container */
+    margin-top: 20px; /* Margin above the blog */
+  }
+}
+
+@media (max-width: 767px) {
+  .ad-container {
+    width: 100%; /* Full width for ads on small screens */
+  }
+}
+
+/* Dropdown styles */
+select {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  border: 1px solid #ccc; /* Border for the dropdown */
+  border-radius: 5px; /* Rounded corners */
+  background-color: white; /* White background */
+  width: 100%; /* Full width */
+  max-width: 300px; /* Limit max width */
+  cursor: pointer; /* Pointer on hover */
+}
+
+select:hover {
+  border-color: #4caf50; /* Change border color on hover */
+}
