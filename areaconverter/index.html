@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter - Sqft, Hectare, Decimal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Unit Converter</h1>
+
+      <!-- Sqft and Hectare Converter -->
+      <div class="converter">
+        <h2>Sqft and Hectare Converter</h2>
+        <label for="sqft-hectare-select">Choose Conversion:</label>
+        <select id="sqft-hectare-select">
+          <option value="sqft-to-hectare">Sqft to Hectare</option>
+          <option value="hectare-to-sqft">Hectare to Sqft</option>
+        </select>
+
+        <label for="sqft-hectare-input">Enter Value:</label>
+        <input
+          type="number"
+          id="sqft-hectare-input"
+          placeholder="Enter value"
+        />
+
+        <button id="sqft-hectare-btn">Convert</button>
+        <div class="result" id="sqft-hectare-result">Result: 0</div>
+      </div>
+
+      <!-- Hectare and Decimal Converter -->
+      <div class="converter">
+        <h2>Hectare and Decimal Converter</h2>
+        <label for="hectare-decimal-select">Choose Conversion:</label>
+        <select id="hectare-decimal-select">
+          <option value="hectare-to-decimal">Hectare to Decimal</option>
+          <option value="decimal-to-hectare">Decimal to Hectare</option>
+        </select>
+
+        <label for="hectare-decimal-input">Enter Value:</label>
+        <input
+          type="number"
+          id="hectare-decimal-input"
+          placeholder="Enter value"
+        />
+
+        <button id="hectare-decimal-btn">Convert</button>
+        <div class="result" id="hectare-decimal-result">Result: 0</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
